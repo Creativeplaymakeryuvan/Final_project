@@ -1,0 +1,107 @@
+.budget-header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.budget-card {
+    position: relative; 
+    border: 1px solid #ced4da; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
+    background: #F5F5F5;
+}
+
+ .budget-card:hover {
+    transform: translateY(-5px); 
+ }
+
+.budget-card-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px; /* Padding around title */
+    text-transform: capitalize;
+}
+
+
+.budget-card-add-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.budget-card-add-title{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 15px;
+}
+
+.budget-card-text {
+    font-size: 16px;
+    color: #6c757d; /* Muted text color */
+    margin: 10px; /* Padding around text */
+}
+
+.budget-view-btn {
+    margin-top: 10px; /* Spacing for the button */
+}
+
+.budget-add-btn {
+    margin-top: 10px; /* Spacing for the button */
+}
+
+.budget-amount {
+    position: absolute; /* Absolute position for top right */
+    top: 25px; /* Spacing from top */
+    right: 12px; /* Spacing from right */
+    font-size: 18px; /* Size of the amount text */
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5); /* Blurred color effect */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional background for better readability */
+    padding: 5px; /* Padding around amount */
+    border-radius: 4px; /* Rounded corners for amount */
+}
+
+.budget-amount-symbol {
+    font-size: 16px; /* Size of the rupee symbol */
+    margin-right: 5px; /* Spacing after the symbol */
+}
+
+.progress-bar-labels{
+    display: flex;
+    justify-content: space-between;
+}
+.progress-bar-wrapper {
+    width: 161%; 
+    margin-top: 10px; 
+    margin-left: -30%;
+    height: 10px;
+    position: relative;
+    .progress-bar{
+        background-color: rgba(34, 34, 96, .8);
+        border-radius: 10px;
+        transition: width 0.5s ease;
+    }
+}
+
+.budget-header {
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-direction: column;
+    margin-top: -15px;
+}
+
+.budget-card-title {
+    font-weight: bold;
+    margin-left: -45px;
+}
+
+.budget-details {
+    margin-left: -45px; 
+    font-size: 0.9rem; 
+    color: gray; 
+}
+
+.budget-model-headder{
+    /* background-color: #222260; */
+}

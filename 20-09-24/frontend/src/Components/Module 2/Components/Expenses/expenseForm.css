@@ -1,0 +1,48 @@
+.custom-modal .modal-header-custom {
+    background-color: #f56692;
+    color: #fff;
+}
+
+.custom-modal .modal-title-custom {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.custom-modal .modal-body-custom {
+    padding: 2rem;
+}
+
+.custom-modal .modal-prompt {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.custom-modal .upload-btn-wrapper {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 10px;
+}
+
+.custom-modal .upload-btn {
+    background-color: #f56692;
+    border: none;
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+}
+
+.custom-modal .upload-btn:hover {
+    background-color: #d0547b;
+}
+
+.custom-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.custom-select {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 0.375rem 0.75rem;
+    background-color: #ffffff;
+}

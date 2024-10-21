@@ -1,0 +1,51 @@
+.total-income{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FCF6F9;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    gap: .5rem;
+    span{
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: #42AD00;
+    }
+} 
+  
+  .incomes {
+    flex: 1;
+    height: 400px; 
+    overflow-y: scroll;
+    padding-right: 10px; 
+  }
+  
+  .incomes::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .incomes::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color for the scrollbar thumb */
+    border-radius: 10px;
+  }
+  
+  .incomes::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  .income-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .income-item:last-child {
+    border-bottom: none;
+  }
+
+  
+  

@@ -1,0 +1,89 @@
+.cardinfo-container {
+  margin-top: 1.75rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .cardinfo-container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-column: 1 / 4;
+  }
+}
+
+.card {
+  padding: 1.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.title {
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.amount {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.amount-in {
+  color: green;
+}
+
+.amount-ex {
+  color: red;
+}
+
+/* Combined Card Section */
+.combined-card {
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card-content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .title{
+    margin-top: -6px;
+    margin-bottom: 3px;
+  }
+}
+
+.card-content.fade-in {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-content.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card-content h2 {
+  margin: 0;
+}
+
+.amount {
+  font-size: 2rem;
+  font-weight: 700;
+}

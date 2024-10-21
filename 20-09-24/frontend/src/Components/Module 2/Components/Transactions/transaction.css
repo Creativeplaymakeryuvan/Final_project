@@ -1,0 +1,139 @@
+.Table-head {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: #e2e8f0;
+    padding: 7px;
+    padding-left: 60px;
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.Table-body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: #f8fafc;
+    padding: 8.2px;
+    padding-left: 60px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.Table-body:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* .Table-body:hover {
+    background-color: #edf2f7;
+} */
+
+.Table-body h2,
+.Table-head h2 {
+    padding: 0;
+    font-size: 16px;
+}
+
+.Table-logo {
+    color: #e3342f;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.Table-logo:hover {
+    color: #cc1f1a;
+}
+
+.action-con {
+    display: flex;
+    gap: 15px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    margin: 0 10px;
+}
+
+.no-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    color: #888;
+    height: 200px;
+}
+
+.no-data-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.no-transactions-message {
+    text-align: center;
+    font-size: 18px; 
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sorting-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -5px;
+    margin-bottom: 13px;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 20px; 
+}
+
+.sorting-controls label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.sorting-controls select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+
+    .Table-head,
+    .Table-body {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .Table-logo {
+        font-size: 16px;
+    }
+}
