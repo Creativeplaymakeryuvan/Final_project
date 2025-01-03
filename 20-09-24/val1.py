@@ -5,18 +5,14 @@ import pytesseract
 import re
 import os
 
-# Load the YOLO model
 model = YOLO('E:\\Python-server\\best(2).pt')
 
 def extract_data(image_path):
-    # Check if the image file exists
     if not os.path.isfile(image_path):
         raise FileNotFoundError("The specified image file does not exist.")
     
-    # Use YOLO model to predict on the image
     results = model.predict(image_path, save=True, save_txt=True)
 
-    # Read the image using OpenCV
     img = cv2.imread(image_path)
     extracted_data = {}
 
